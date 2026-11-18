@@ -26,5 +26,6 @@ import { UserPrefs, Wid } from '../../whatsapp';
  * ```
  */
 export function getMyUserLid(): Wid {
-  return UserPrefs.getMeLidUserOrThrow();
+  // return UserPrefs.getMeLidUser();
+  return UserPrefs.getMaybeMeUser();
 }
